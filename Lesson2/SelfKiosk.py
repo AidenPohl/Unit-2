@@ -14,7 +14,7 @@ class Register:
 
         '''
         Args:
-            transaction
+            
         
         '''
         self.resets = 0
@@ -104,7 +104,7 @@ class Register:
         print(f"Discount Applied to Pre-Total - ${self.discount_total:.2f}")
         print(f"Final Total: ${self.transaction_total:.2f}")
         print("Thanks for shopping here!")
-        kiosk_reset = input("Are you done shopping?(y/n): ").lower
+        kiosk_reset = input("Are you done shopping?(y/n): ").lower()
         if kiosk_reset == 'n':
             self.reset_transaction()
         else:
